@@ -1,6 +1,4 @@
-import jwt
-import datetime
-
+import jwt, datetime
 
 def create_access_token(id):
     return jwt.encode({
