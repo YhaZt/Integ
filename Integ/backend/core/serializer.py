@@ -1,5 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 from .models import User
+from rest_framework import serializers 
 
 class UserSerializer(ModelSerializer):
     class Meta:
@@ -22,3 +23,4 @@ class UserSerializer(ModelSerializer):
             instance.save()
             return instance
         # return super().create(validated_data)
+        

@@ -1,3 +1,4 @@
+from tkinter.tix import STATUS
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -7,6 +8,8 @@ from core.authentication import decode_access_token, create_refresh_token, creat
 from .serializer import UserSerializer
 from core.models import User
 from rest_framework.authentication import get_authorization_header
+from rest_framework.decorators import api_view
+from django.http import JsonResponse
 
 class RegisterAPIView(APIView):
     def post(self, request):
@@ -49,3 +52,4 @@ class LoginAPIView(APIView):
         return response
         # serializer = UserSerializer(user)
         # return Response(serializer.data)
+        
