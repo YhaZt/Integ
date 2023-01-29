@@ -1,6 +1,5 @@
 from django.urls import path, re_path
 from core import views
-from .views import RefreshAPIView, LogoutAPIView
 
 urlpatterns = [
     path('register', views.RegisterAPIView.as_view()),
