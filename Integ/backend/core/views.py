@@ -58,7 +58,7 @@ class LogoutAPIView(APIView):
         response = Response()
         response.delete_cookie(key='refresh_token')
         response.data = {
-            'message': 'success'
+            'message': 'success logout'
         }
         return response
         

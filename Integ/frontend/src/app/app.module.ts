@@ -4,29 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from  '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './include/header/header.component';
-import { FooterComponent } from './include/footer/footer.component';
-import { SidebarComponent } from './include/sidebar/sidebar.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { ResetComponent } from './reset/reset.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './pages/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MatchPasswordPatternDirective } from './directives/match-password-pattern.directive';
+import { RegisterComponent } from './pages/register/register.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavComponent } from './components/nav/nav.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
     LoginComponent,
     RegisterComponent,
-    ResetComponent,
-    DashboardComponent,
-    MatchPasswordPatternDirective,
+    HomeComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
